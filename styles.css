@@ -1,1 +1,41 @@
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Theme Base */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s, color 0.4s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --primary: #0077ff;
+  --secondary: #ff8800;
+}
+
+body.dark-theme {
+  --bg: #121212;
+  --text: #eeeeee;
+  --primary: #66aaff;
+  --secondary: #ffaa44;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text);
+  margin-left: 15px;
+  transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg);
+}
 
